@@ -11,10 +11,6 @@ const loggedIn = true;
 
 /////// PART 1 - Variables and Data Types demo///////
 
-// Var scopes differently than let. Var is more global, so it is not constrained within a block of code.
-// On the other hand, let allows the variable to exist only within that defined scope. We want to use var if we want
-// the variable to be able to be modified outside of the scope. We want to use let if we want to have a blocked scope for the variable.
-
 var a = 'Test1';
 let b = 'Test2';
 
