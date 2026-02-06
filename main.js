@@ -10,6 +10,11 @@ const loggedIn = true;
 
 
 /////// PART 1 - Variables and Data Types demo///////
+
+// Var scopes differently than let. Var is more global, so it is not constrained within a block of code.
+// On the other hand, let allows the variable to exist only within that defined scope. We want to use var if we want
+// the variable to be able to be modified outside of the scope. We want to use let if we want to have a blocked scope for the variable.
+
 var a = 'Test1';
 let b = 'Test2';
 
@@ -92,7 +97,7 @@ result3Element.innerHTML = loggedIn ? "Welcome back!" : "Please log in";
 
 //Make a copy of the above function and rename it GreetingsArrow() and then convert function to an arrow function here
 const Greetings = (name) => `Hello ${name}!`;
-console.log(Greetings("Clint"));
+console.log(Greetings("Melinda"));
 
 
 //////// PART 5 - Array methods////////
@@ -183,14 +188,12 @@ const baseProduct = {
   
   // Merge basePrduct and Seasonal using spread operator and add lastUpdated property with a value of '2023-12-31'
   ///UPDATE THIS CODE
-  const currentProduct = { ...baseProduct, ...holidayPromo, lastUpdated: '2023-12-31'
-
-};
+  const currentProduct = { ...baseProduct, ...holidayPromo, lastUpdated: '2023-12-31'};
   
   //Check the result object in the console:
   console.log(currentProduct);
   //UPDATE THIS OUTPUT
-  document.getElementById("result7").textContent = `The ${currentProduct.name} are on sale for ${currentProduct.price} as of ${currentProduct.lastUpdated}`; 
+  document.getElementById("result7").textContent = `The ${currentProduct.name} are on sale for ${currentProduct.price} as of ${currentProduct.lastUpdated}.`; 
 
 
 
